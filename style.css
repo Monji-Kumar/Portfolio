@@ -1,0 +1,622 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'poppins', sans-serif;
+}
+.header{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    display: flex;
+}
+.title{
+    position: relative;
+    font-size: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: default;
+    color: white;
+}
+.navbar ul{
+    list-style: none;
+    justify-content: space-between;
+    display: inline-flex;
+}
+.navbar ul li a{
+    font-size: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 25px;
+    color: white;
+    transition: 1s ease;
+}
+.navbar ul li a:hover{
+    color: aqua;
+}
+.one{
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    height: 100vh;
+    background: url(home-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 70px 10% 0;
+}
+.one-content{
+    max-width: 600px;
+    color: white;
+}
+.one-content h2{
+    font-size: 32px;
+    font-weight: 700;
+}
+.one-content h1{
+    font-size: 60px;
+    font-weight: 700;
+    margin: -3px 0;
+}
+.one-content p{
+    font-size: 20px;
+    color: white;
+    padding-bottom: 20px;
+}
+.one-content div i{
+    font-size: 35px;
+}
+.one-symbol a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    background: transparent;
+    height: 50px;
+    border: 2px solid white;
+    border-radius: 50%;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    margin: 30px 15px 30px 0;
+    transition: 0.6s ease;
+}
+.one-symbol a:hover{
+    background-color: aliceblue;
+    color: rgb(0, 81, 255);
+    box-shadow: 0 0 20px white;
+    /* width: 50px;
+    height: 50px; */
+}
+.btn-box{
+    display: inline-block;
+    padding: 12px 20px;
+    background: aqua;
+    border-radius: 40px;
+    font-size: 16px;
+    color: rgb(0, 0, 150);
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.6s ease;
+}
+.btn-box:hover{
+    background-color: rgb(250, 250, 250);
+    color: rgb(0, 0, 150);
+    box-shadow: 0 0 5px white, 0 0 25px white, 0 0 50px white, 0 0 100px white, 0 0 200px white;
+    /* font-size: 20px; */
+}
+.text{
+    color:aqua
+}
+.two{
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    /* justify-content: center; */
+    align-items: center;
+    background-color: rgb(0, 0, 150);
+    /* flex-direction: column; */
+    /* gap: 1.5rem; */
+    /* padding-bottom: 0rem; */
+    /* background: url(two-bg.jpg); */
+}
+.two-img {
+    /* padding-bottom: 20%; */
+    /* padding-top: 20%; */
+    max-width: 630px;
+    height: auto;  
+    width: 100%;
+    border-radius: 8px;
+    /* width: 600px;  */
+}
+.about-text h2{
+    font-size: 60px;
+    margin-bottom: 30px; 
+    color: aliceblue;
+}
+.about-text span{
+    color: aqua;
+    padding-left: 15px;
+}
+.about-title{
+    display: flex;
+}
+.about-text p  {
+    color: aliceblue;
+    margin-right: 10px;
+    font-size: 21px;
+    line-height: 1.4;
+    margin-bottom: 4rem;
+}
+.edu{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(0, 0, 150);
+    color: aliceblue;
+    font-size: 20px;
+    line-height: 1.4;
+    align-items: center;
+    /* margin-bottom: 4rem; */
+}
+.edu-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(259px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+    margin: 50px;
+}
+.edu-list div{
+    background-color: transparent;
+    padding: 40px;
+    /* font-size: 13px; */
+    /* font-weight: 13px; */
+    border-right: 10px ;
+    border-radius: 20px;
+    transition: background 0.5s, transform 0.5s ease;
+    box-shadow: 1px 1px 20px rgb(0, 255, 255);
+}
+.edu-list div i{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.edu-list div h2{
+    font-size: 30px;
+    /* font-weight: 500; */
+    /* margin-bottom: 15px;not sure i want this */
+}
+.edu-list div p{
+    font-size: 15px;
+    font-weight: 700;
+    /* font-weight: 500; */
+    /* margin-bottom: 15px;not sure i want this */
+}
+.sub-title{
+    text-align: center;
+    font-size: 60px;
+    padding-bottom: 70px;
+    padding-top: 50px;
+    background-color: rgb(0, 0, 150);
+    color: aliceblue;
+}
+.sub-title span{
+    color: aqua;
+    
+}
+.edu-list div:hover{
+    transform: translateY(-10px);
+}
+.skills{
+    height: 100vh;
+    width: 100%;
+    display:flex ;
+    flex-wrap: wrap;
+    background-color: rgb(0, 0, 150);;
+    color: aliceblue;
+}
+.skill-container{
+    width: 600px;
+    height: 500px;
+    padding: 75px 90px;
+    margin-left: 120px;
+}
+.tech-head{
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 5px ;
+    margin-bottom: 50px;
+}
+.bar{
+    font-size: 35px;
+    padding: 5px;
+}
+.tech-bar .bar{
+    margin-top: 40px 0;
+}
+.tech-bar .bar:first-child{
+    margin-top: 0;
+}
+.tech-bar .bar:last-child{
+    margin-bottom: 0;
+}
+.tech-bar .bar .info{
+    margin-bottom: 5px;
+}
+.tech-bar .bar .info span{
+    font-size: 17px;
+    font-weight: 500;
+    animation: showText 0.5s 1s linear forwards;
+    opacity: 1;
+}
+.tech-bar .bar .line{
+    position: relative;
+    border-radius: 10px;
+    width: 100%;
+    height: 5px;
+    background-color: black;
+    animation: animate 1s cubic-bezier(1,0,0,5,1) linear forwards;
+    transform:scaleX(1);
+    transform-origin: left;
+    transition: 1s;
+    
+}
+
+.tech-bar .bar .line span{
+    height: 100%;
+    background-color: aqua;
+    position: absolute;
+    border-radius: 10px;
+    animation: animate 1s 1s cubic-bezier(1,0,0,5,1) forwards;
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: 1s;
+}
+.line .html span{
+    width: 75%;
+}
+.css span{
+    width: 45%;
+}
+.c span{
+    width: 60%;
+}
+.python span{
+    width: 45%;
+}
+.line span::after{
+    position: absolute;
+    padding: 1px 8px;
+    background-color: black;
+    color: white;
+    font-size: 12px;
+    border-radius: 3px;
+    top: -20px;
+    right: -20px;
+}
+.line .html span::after{
+    content: "75%";
+}
+.css span::after{
+    content: "45%";
+}
+.c span::after{
+    content: "60%";
+}
+.python span::after{
+    content: "45%";
+}
+.line span::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    top: -10px;
+    right: 0;
+    animation: showText 0.5s 1.5s linear forwards;
+    opacity: 0;
+}
+@keyframes showText {
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes animate {
+    100%{
+        transform: scaleX(0);
+    }
+}
+.pies{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+.pies .pie{
+    width: 50%;
+    height: 170px;
+    margin-bottom: 10px;
+    position: relative;
+}
+.pies .pie svg{
+    position: absolute;
+    top: 10%; 
+    left: 23%;
+    transform: translate(-50%,-50%);
+    transform: rotate(-90deg);
+    width: 120px;
+    height: 160px;
+}
+.progress-bar{
+    stroke-width: 10;
+    stroke: black;
+    fill: transparent;
+    stroke-dasharray: 502;
+    stroke-dashoffset: -1;
+    stroke-linecap: round;
+}
+ .path-1{
+    stroke-width: 10;
+    stroke: aqua;
+    fill: transparent;
+    stroke-dasharray: 502;
+    stroke-dashoffset: 50;
+    stroke-linecap: round;
+}
+.path-2{
+    stroke-width: 10;
+    stroke: aqua;
+    fill: transparent;
+    stroke-dasharray: 502;
+    stroke-dashoffset: 125;
+    stroke-linecap: round;
+}
+.path-3{
+    stroke-width: 10;
+    stroke: aqua;
+    fill: transparent;
+    stroke-dasharray: 502;
+    stroke-dashoffset: 155;
+    stroke-linecap: round;
+}
+.path-4{
+    stroke-width: 10;
+    stroke: aqua;
+    fill: transparent;
+    stroke-dasharray: 502;
+    stroke-dashoffset: 75;
+    stroke-linecap: round;
+}
+.pie .percent{
+    position: absolute;
+    top: 53%;
+    left: 45%;
+    font-weight: 600;
+}
+.pie .pie-text{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+}
+.project{
+    background-color: rgb(0, 0, 150);
+    height: 100vh;
+}
+.pro-text{
+    /* padding-top: 130px; */
+    /* margin-top: 200px; */
+    color: aliceblue;
+}
+.pro-text h2{
+    font-size: 60px;
+    line-height: 1;
+    text-align: center;
+    padding-bottom: 200px;
+}
+.pro-text h2 span{
+    color: aqua;
+}
+.pro-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,auto));
+    padding-left: 10px;
+    padding-right: 10px;
+    justify-content: space-between;
+}
+.row{
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.row img{
+    width: 100%;
+    border-radius: 8px;
+    display: block;
+    transition: transform 0.5s;
+}
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.1),aqua);
+    position: absolute;
+    border-radius: 8px;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 40px;
+    transition: height 0.5s;
+}
+.layer h5{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.layer p{
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    line-height: 1.8;
+}
+.layer i{
+    color: red;
+    margin-top: 20px;
+    font-size: 20px;
+    background: white;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.row:hover img{
+    transform: scale(1.05);
+
+}
+.row:hover .layer{
+    height: 100%;
+}
+.contact-me{
+    height: 100vh;
+    background: rgb(0,0,150);
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 3rem;
+    padding-left: 30px;
+    /* margin-top: 130px; */
+}
+.contact-text h2{
+    font-size: 90px;
+    line-height: 1;
+    text-align: center;
+    color: aliceblue;
+}
+.contact-text h2 span{
+    color: aqua;
+}
+.contact-text h4{
+    margin: 15px 0;
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: 600;
+}
+.contact-text p{
+    color: aliceblue;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 2rem;
+}
+.contact-list{
+    margin-bottom: 3rem;
+}
+.contact-list li{
+    margin-bottom: 10px;
+    display: block;
+    color: aliceblue;
+}
+.contact-list i{
+    display: inline-block;
+    color: aqua;
+    font-size: 20px;
+    font-weight: 600;
+    transition: all .40s ease;
+}
+.contact-list li a:hover{
+    transform: scale(1.01) translateY(-5px);
+    color: aqua;
+}
+.icons i{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid aqua;
+    border-radius: 50%;
+    color: aqua;
+    text-decoration: none;
+    margin: 30px 15px 30px 0;
+    transition: 0.5s;
+}
+.icons i:hover{
+    background: aqua;
+    color: rgb(0, 0, 150);
+    box-shadow: 0 0 20px aqua;
+}
+.contact-form form{
+    position: relative;  
+}
+.contact-form form input, form textarea{
+    border: none;
+    outline: none;
+    width: 90%;
+    padding: 10px;
+    background: grey;
+    color: black;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    border-radius: 0.5rem;
+}
+.contact-form textarea{
+    resize: none;
+    height: 220px;
+}
+.contact-form form .send{
+    display: inline-block;
+    padding: 14px 60px;
+    background: aqua;
+    border-radius: 40px;
+    font-size: 18px;
+    color: black;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    opacity: 1;
+    box-shadow: 0 0 5px aqua, 0 0 25px aqua;
+}
+.contact-form form .send:hover{
+    box-shadow: 0 0 5px aqua, 0 0 25px aqua, 0 0 50px aqua, 0 0 200px aqua;
+}
+.last-text{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: rgb(0, 0, 150);
+    font-weight: 300;
+    color: aliceblue;
+    /* margin-top: 70px; */
+}
+.top{
+    position: fixed;
+    bottom: 2.1rem;
+    right: 2.1rem;
+}
+.top i{
+    color: black;
+    background: aqua;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 0.5rem;
+}
